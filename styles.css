@@ -6,8 +6,6 @@ body {
     height: 100%;
 }
 
-.sidebar,
-.header,
 .main {
     border: solid 1px black;
 }
@@ -23,6 +21,9 @@ body {
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(90, 158, 221);
+    color: white;
+    box-shadow: 0px 0px 12px black;
 }
 
 .sidebar div {
@@ -53,18 +54,12 @@ body {
     font-size: 1.5rem;
 }
 
-.search,
-.welcome,
-.user,
-.buttons {
-    border: solid 1px black;
-}
-
 .header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 12px 0px 12px black;
 }
 
 .search {
@@ -104,6 +99,7 @@ body {
 
 .welcome-box {
     margin-left: 8rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -114,12 +110,14 @@ body {
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .welcome-message p:nth-child(2) {
     margin-top: 0;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .buttons {
@@ -132,6 +130,11 @@ body {
 .buttons button {
     width: 25%;
     height: 50%;
+    border: none;
+    border-radius: 32px;
+    background-color: rgb(90, 158, 221);
+    font-size: 1.75rem;
+    color: white;
 }
 
 .main {
