@@ -1,0 +1,62 @@
+@import url(https://fonts.bunny.net/css?family=almarai:400);
+
+html, 
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.sidebar,
+.header,
+.main {
+    border: solid 1px black;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    width: 100%;
+    height: 100%;
+    font-family: "Almarai", sans-serif, "Helvetica", "Arial";
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.sidebar div {
+    margin-left: 1rem;
+}
+
+.sidebar p {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sidebar-one {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.sidebar-one p {
+    margin-left: -1rem;
+}
+
+.sidebar-two {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.sidebar-three {
+    font-size: 1.5rem;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.main {
+    grid-area: 2 / 2 / 3 / 3;
+}
