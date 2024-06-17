@@ -139,4 +139,65 @@ body {
 
 .main {
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 4fr 1fr;
+}
+
+.main div {
+    border: solid 1px black;
+}
+
+.projects-title {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.announcements-title {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.projects {
+    grid-area: 2 / 1 / 5 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project {
+    border: solid 1px black;
+    margin: 30px;
+}
+
+.announcements {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.announcement-list {
+    height: 100%;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.recommended-title {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.recommended {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.recommendation-list {
+    height: 100%;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.empty {
+    grid-area: 5 / 1 / 6 / 3;
 }
