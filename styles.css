@@ -53,8 +53,85 @@ body {
     font-size: 1.5rem;
 }
 
+.search,
+.welcome,
+.user,
+.buttons {
+    border: solid 1px black;
+}
+
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search {
+    align-content: center;
+}
+
+.search-bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 75%;
+    height: 2rem;
+    border: none;
+    background-color: rgb(196, 194, 194);
+    border-radius: 16px;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+}
+
+.user {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.user-buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.welcome-box {
+    margin-left: 8rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 32px;
+}
+
+.welcome-message p:first-child {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.welcome-message p:nth-child(2) {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.buttons button {
+    width: 25%;
+    height: 50%;
 }
 
 .main {
